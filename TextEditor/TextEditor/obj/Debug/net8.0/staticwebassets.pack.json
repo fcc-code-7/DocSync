@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TextEditor.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
       "Id": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

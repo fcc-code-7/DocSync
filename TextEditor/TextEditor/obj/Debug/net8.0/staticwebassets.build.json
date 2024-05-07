@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZeEO0L2H/G9Fuggg47UN8kc9cWGfUMP8AvkeSYHhPIQ=",
+  "Hash": "P/uryesMAdSImvzzV9hMUL8NYtMLroq9csZ17+LkaQg=",
   "Source": "TextEditor",
   "BasePath": "_content/TextEditor",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TextEditor.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\css\\app.css",
+      "SourceId": "TextEditor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\",
+      "BasePath": "_content/TextEditor",
+      "RelativePath": "css/app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
       "Identity": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\css\\site.css",
