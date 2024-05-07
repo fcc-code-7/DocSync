@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P/uryesMAdSImvzzV9hMUL8NYtMLroq9csZ17+LkaQg=",
+  "Hash": "Dqq6b/Eq/mpSKANoc53g4Ms9+o3biPZUQ1sUcWk2QHM=",
   "Source": "TextEditor",
   "BasePath": "_content/TextEditor",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\js\\app.js",
+      "SourceId": "TextEditor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\",
+      "BasePath": "_content/TextEditor",
+      "RelativePath": "js/app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
     },
     {
       "Identity": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\js\\site.js",

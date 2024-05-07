@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
       "Id": "C:\\Users\\faraz\\OneDrive\\Desktop\\DocSync\\TextEditor\\TextEditor\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

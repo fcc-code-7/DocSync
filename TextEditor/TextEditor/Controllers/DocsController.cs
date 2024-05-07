@@ -13,6 +13,7 @@ using TextEditor.Models;
 namespace TextEditor.Controllers
 {
     [Authorize]
+
     public class DocsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -23,11 +24,18 @@ namespace TextEditor.Controllers
         }
 
         // GET: Docs
+   
         public async Task<IActionResult> Index()
-        {
-            var applicationDbContext = _context.Docs.Include(d => d.User);
-            return View(await applicationDbContext.ToListAsync());
-        }
+{
+    // Retrieve the current user's ID
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+    // Filter documents based on the current user's ID
+    var userDocs = _context.Docs.Where(d => d.UserId == userId);
+
+    return View(await userDocs.ToListAsync());
+}
+
 
         // GET: Docs/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -49,6 +57,7 @@ namespace TextEditor.Controllers
         }
 
         // GET: Docs/Create
+
         public IActionResult Create()
         {
             
@@ -59,7 +68,6 @@ namespace TextEditor.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Content,UserId")] Doc doc)
         {
             if (ModelState.IsValid)
@@ -73,6 +81,7 @@ namespace TextEditor.Controllers
         }
 
         // GET: Docs/Edit/5
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -127,7 +136,7 @@ namespace TextEditor.Controllers
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", doc.UserId);
             return View(doc);
         }
-
+  
         // GET: Docs/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -153,16 +162,18 @@ namespace TextEditor.Controllers
         // POST: Docs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int? id)
         {
             var doc = await _context.Docs.FindAsync(id);
             if (doc != null)
             {
                 _context.Docs.Remove(doc);
+                
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+
         }
 
         private bool DocExists(int id)

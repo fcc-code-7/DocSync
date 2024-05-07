@@ -1,8 +1,49 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Doc Editor</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/app.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+       
+
+    </style>
+</head>
+<body>
+
+<div class="container mb-5">
+    <div class="header">
+        <h1>Welcome to <span style="color: #007bff;">Doc Editor</span></h1>
+        <p>Experience the power of collaborative document editing with our Google Docs Clone!</p>
+    </div>
+    <ul class="features mb-5">
+        <li><i class="fas fa-file-alt"></i> Creating, editing, and deleting documents</li>
+        <li><i class="fas fa-users"></i> Real-time collaboration</li>
+        <li><i class="fas fa-file-import"></i> Importing and exporting documents</li>
+        <li><i class="fas fa-file-pdf"></i> Printing documents as PDF</li>
+        <li><i class="fas fa-ellipsis-h"></i> And much more...</li>
+    </ul>
 </div>
+    <script src="~/js/app.js"></script>
+<!-- Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

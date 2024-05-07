@@ -1,3 +1,52 @@
 ﻿.locked-height {
     height: 18vh;
     resize: none; /* Prevent resizing by the user */
+}
+    .header{
+    animation: fadeInDown 1s ease;
+}
+
+.features {
+    margin-top: 50px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+    .features li {
+        margin-bottom: 20px;
+        display: none;
+        animation: fadeIn 1s ease forwards;
+    }
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
